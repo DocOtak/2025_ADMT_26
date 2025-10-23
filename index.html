@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>ADMT-26 CCHDO Argo CTD Reference Database</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="img/_DSC6209.jpeg" data-background-position="right" data-markdown>
+				<textarea data-template>
+				## CCHDO Argo CTD Reference Database
+	
+				<small>CCHDO (Andrew Barna Presenting)<br />
+				ADMT-26
+				Woods Hole, MA, USA
+				2025-10-23
+				</small>
+				</textarea>
+			</section>
+			<section data-markdown data-separator-notes="^Note:" data-transition="none">
+				<textarea data-template>
+					## CCHDO Mission (25+ years)
+					Supporting oceanographic research by curating and providing access to reference quality, global, vessel-based CTD and bottle data from **GO-SHIP** and other repeat hydrography programs 
+
+					https://cchdo.ucsd.edu
+
+					FY26 funds received from both NSF and NOAA
+					---
+					## CCHDO Staff
+					Contact: cchdo@ucsd.edu
+					* Director: Dr. Karen Stocks
+					* Science Advisor: Dr. Sarah Purkey
+					* Andrew Barna (me)
+					* Alan Yang
+					* Carolina Berys
+					* Dr. Savannah Lewis
+					* Elisa Aitoro
+					* Andre Dos Santos
+					* Steve Diggs now at UC Office of the President
+
+					Note:
+					Most staff split between multiple projects
+					---
+					## Total CTD Profiles at CCHDO
+					64289 Profiles
+					![All the CCHDO Profiles](plots/ctd_profiles.svg)
+					---
+					## New Profiles Since ADMT 25
+					Just US GO-SHIP I09N (115 profiles)
+					![Recent Profiles at CCHDO](plots/recent_ctd_profiles.svg)
+					---
+					## New Standardized CTD Files
+					11840 profiles
+					![Updated Profiles at CCHDO](plots/recent_updated_ctd_profiles.svg)
+					---
+					## Deep Oxygen CTD Profiles
+					20486 profiles
+					![Updated Profiles at CCHDO](plots/deep_oxy_ctd_profiles.svg)
+					---
+					## Nitrate (Bottle) Profiles
+					42063 profiles
+					![Updated Profiles at CCHDO](plots/nitrate_bottle_profiles.svg)
+					---
+					## PH (Bottle) Profiles
+					14350 profiles
+					![Updated Profiles at CCHDO](plots/ph_total_bottle_profiles.svg)
+				</textarea>
+			</section>
+			<section data-markdown data-separator-notes="^Note:" data-transition="none">
+				<textarea data-template>
+					## Data Access
+					* CCHDO Website
+					  * Cruise granularity
+					  * Bulk Download options from Search Page
+					* ERDDAP at PMEL
+					  * [CTD](https://data.pmel.noaa.gov/generic/erddap/tabledap/cchdo_ctd.html)
+					  * [Bottle](https://data.pmel.noaa.gov/generic/erddap/tabledap/cchdo_bottle.html)
+					* Argovis
+					* New (ish) Monthly Snapshots with UCSD Library: https://doi.org/10.6075/J0CCHAM8 
+					---
+					## CCHDO Activities
+					* CF/netCDF is now our primary working format
+					* Fully assembling more data than received in past year
+						* 133 data files received, 400 assembled
+					* CF/NetCDF conversions
+						* Bottle - 99.6% done, 5 to go
+						* CTD - 98.0% done, 36 to go
+					* One private CTD submission since ADMT-25
+					---
+					## Thank you
+					* cchdo@ucsd.edu
+					* https://cchdo.ucsd.edu
+					* Figures Data Source: CCHDO Hydrographic Data Office (2025). CCHDO Hydrographic Data Archive, Version 2025-10-01. In CCHDO Hydrographic Data Archive. UC San Diego Library Digital Collections. https://doi.org/10.6075/J0CCHMM1
+				</textarea>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
